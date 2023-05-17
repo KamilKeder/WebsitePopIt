@@ -1,0 +1,600 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+}
+
+#popit_phone {
+  display: none;
+}
+
+#hamburger {
+  display: none;
+}
+
+nav {
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  position: absolute;
+  width: 80%;
+  font-size: 25px;
+  font-weight: bold;
+}
+nav span:hover {
+  color: gray;
+  transition: 1s;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  gap: 80px;
+}
+nav ul li {
+  list-style: none;
+  cursor: pointer;
+}
+nav ul li:hover {
+  color: gray;
+  transition: 1s;
+}
+
+#div__popit {
+  background: url(img/background.png) no-repeat 70% 10%;
+  height: 100vh;
+  min-height: 1100px;
+  background-color: rgb(255, 191, 105);
+  width: 100%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+#popit__box {
+  width: 650px;
+  position: relative;
+  top: 20%;
+  left: 10%;
+}
+#popit__box h3 {
+  text-align: center;
+  font-size: 160px;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+#popit__box p {
+  margin-top: 0;
+  color: white;
+  font-size: 20px;
+  text-align: justify;
+}
+#popit__box button {
+  margin-top: 20px;
+  font-size: 25px;
+  background-color: rgb(203, 243, 240);
+  border: 0;
+  width: 200px;
+  height: 50px;
+}
+#popit__box button:hover {
+  background-color: gray;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#div__popit_opis {
+  height: auto;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+#div__popit_opis p {
+  font-size: 25px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.7);
+  margin: auto;
+  width: 70%;
+}
+
+#div__popit_produkty {
+  height: 500px;
+  margin: auto;
+  width: 100%;
+  background-color: rgb(203, 243, 240);
+  text-align: center;
+  padding-top: 50px;
+}
+#div__popit_produkty h3 {
+  margin-bottom: 50px;
+}
+#div__popit_produkty #produkty_lista {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+}
+#div__popit_produkty #produkty_lista .div__produkt {
+  width: 300px;
+  height: 400px;
+  text-align: center;
+}
+#div__popit_produkty #produkty_lista .div__produkt img {
+  width: 200px;
+  height: 200px;
+}
+#div__popit_produkty #produkty_lista .div__produkt p {
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 0px;
+}
+#div__popit_produkty #produkty_lista .div__produkt button {
+  background-color: rgb(255, 191, 105);
+  border: 0;
+  width: 100px;
+  height: 40px;
+  font-weight: 700;
+  cursor: pointer;
+}
+#div__popit_produkty #produkty_lista .div__produkt button:hover {
+  background-color: gray;
+  transition: 1s;
+}
+
+#div__gra {
+  height: 600px;
+  width: 90%;
+  margin: auto;
+  background: url(img/bg-grid.png) no-repeat center center;
+  display: flex;
+}
+#div__gra #gra__opis {
+  width: 700px;
+  padding: 50px;
+  margin-top: 80px;
+}
+#div__gra #gra__opis p {
+  color: rgba(0, 0, 0, 0.9);
+}
+#div__gra img {
+  height: 350px;
+  aspect-ratio: auto;
+  padding: 50px;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+footer {
+  width: 100%;
+  font-size: 20px;
+  background-color: rgb(51, 51, 51);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: white;
+  margin: auto;
+}
+footer span:hover {
+  color: crimson;
+  transition: 1s;
+  cursor: pointer;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer ul li {
+  list-style: none;
+  margin-right: 50px;
+  cursor: pointer;
+  flex-grow: 1;
+}
+footer ul li:hover {
+  color: crimson;
+  transition: 1s;
+}
+
+@media (min-width: 1251px) and (max-width: 1500px) {
+  #hamburger {
+    display: none;
+  }
+  nav {
+    font-size: 20px;
+  }
+  #div__popit {
+    min-height: 500px;
+    height: 700px;
+    background: url(img/background.png) no-repeat center center;
+    background-color: rgb(255, 191, 105);
+    background-size: contain;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  #div__popit #popit__box {
+    width: 500px;
+  }
+  #div__popit #popit__box h3 {
+    font-size: 120px;
+  }
+  #div__popit #popit__box p {
+    font-size: 17px;
+  }
+  #div__popit #popit__box button {
+    width: 180px;
+    height: 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1250px) {
+  #hamburger {
+    display: none;
+  }
+  nav {
+    font-size: 20px;
+  }
+  footer {
+    font-size: 20px;
+  }
+  #div__popit {
+    height: 700px;
+    min-height: 700px;
+    background: url(img/background.png) no-repeat center center;
+    background-color: rgb(255, 191, 105);
+    background-size: contain;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  #div__popit #popit__box {
+    width: 400px;
+  }
+  #div__popit #popit__box h3 {
+    font-size: 100px;
+  }
+  #div__popit #popit__box p {
+    font-size: 15px;
+  }
+  #div__popit #popit__box button {
+    width: 180px;
+    height: 40px;
+  }
+  #div__popit_opis h3 {
+    font-size: 20px;
+  }
+  #div__popit_opis p {
+    font-size: 15px;
+  }
+  #div__popit_produkty h3 {
+    font-size: 20px;
+  }
+  #div__gra {
+    width: 100%;
+  }
+  #div__gra #gra__opis h3 {
+    font-size: 20px;
+  }
+  #div__gra #gra__opis p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  #hamburger {
+    display: none;
+  }
+  nav {
+    font-size: 18px;
+  }
+  #div__popit {
+    height: auto;
+    min-height: 500px;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 0;
+  }
+  #div__popit #popit__box {
+    width: 320px;
+    padding-top: 10%;
+  }
+  #div__popit #popit__box h3 {
+    font-size: 80px;
+  }
+  #div__popit #popit__box p {
+    font-size: 13px;
+  }
+  #div__popit #popit__box button {
+    width: 100px;
+    height: 25px;
+    font-size: 12px;
+  }
+  #div__popit_opis {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  #div__popit_opis h3 {
+    font-size: 20px;
+  }
+  #div__popit_opis p {
+    font-size: 15px;
+  }
+  #div__popit_produkty {
+    height: auto;
+    padding-top: 30px;
+  }
+  #div__popit_produkty h3 {
+    font-size: 20px;
+  }
+  #div__popit_produkty .div__produkt img {
+    max-width: 180px;
+    max-height: 180px;
+  }
+  #div__gra {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+  }
+  #div__gra #gra__opis {
+    width: 90%;
+    margin-top: 50px;
+  }
+  #div__gra #gra__opis h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+  #div__gra #gra__opis p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  #div__gra img {
+    height: auto;
+    width: 60%;
+    margin-left: 0;
+    margin-top: 30px;
+    padding: 0 0 50px 0;
+  }
+  /* Footer */
+  footer {
+    font-size: 16px;
+  }
+  footer ul li {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  #hamburger {
+    display: none;
+  }
+  nav {
+    font-size: 13px;
+  }
+  #div__popit {
+    height: auto;
+    min-height: 400px;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 0;
+  }
+  #div__popit #popit__box {
+    width: 230px;
+    padding-top: 10%;
+  }
+  #div__popit #popit__box h3 {
+    font-size: 50px;
+  }
+  #div__popit #popit__box p {
+    font-size: 10px;
+  }
+  #div__popit #popit__box button {
+    width: 90px;
+    height: 20px;
+    font-size: 10px;
+  }
+  #div__popit_opis {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  #div__popit_opis h3 {
+    font-size: 14px;
+  }
+  #div__popit_opis p {
+    font-size: 10px;
+  }
+  #div__popit_produkty {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  #div__popit_produkty h3 {
+    font-size: 14px;
+  }
+  #div__popit_produkty .div__produkt {
+    max-height: 250px;
+  }
+  #div__popit_produkty .div__produkt img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  #div__popit_produkty .div__produkt p {
+    font-size: 10px;
+  }
+  #div__popit_produkty .div__produkt button {
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
+  }
+  #div__gra {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+  }
+  #div__gra #gra__opis {
+    width: 90%;
+    margin-top: 30px;
+  }
+  #div__gra #gra__opis h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+  #div__gra #gra__opis p {
+    font-size: 12px;
+    text-align: justify;
+  }
+  #div__gra img {
+    height: auto;
+    width: 80%;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 0 0 30px 0;
+  }
+  /* Footer */
+  footer {
+    font-size: 14px;
+  }
+  footer ul li {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 550px) {
+  nav {
+    position: fixed;
+    padding-top: 20px;
+    z-index: 99999;
+    background-color: rgb(255, 191, 105);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+  }
+  nav span {
+    font-size: 18px;
+  }
+  nav ul {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    font-size: 13px;
+    height: auto;
+    right: -20px;
+    top: 5px;
+    background-color: burlywood;
+    gap: 0;
+    padding: 0;
+  }
+  nav ul li {
+    border: 1px solid black;
+    padding: 10px 50px 10px 10px;
+  }
+  nav ul li:hover {
+    background-color: bisque;
+  }
+  nav #hamburger {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  #div__popit {
+    padding-top: 70px;
+    max-height: auto;
+    height: auto;
+    min-height: auto;
+    display: block;
+    background-size: contain;
+    background: none;
+    background-color: rgb(255, 191, 105);
+  }
+  #div__popit #popit__box {
+    width: 90%;
+    left: 5%;
+    display: grid;
+    place-items: center;
+  }
+  #div__popit #popit__box img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 280px;
+    margin-left: 50px;
+    padding-bottom: 30px;
+  }
+  #div__popit #popit__box h3 {
+    font-size: 30px;
+  }
+  #div__popit #popit__box p {
+    font-size: 15px;
+  }
+  #div__popit #popit__box button {
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+  }
+  #div__popit_opis {
+    margin-top: 50px;
+  }
+  #div__popit_opis h3 {
+    font-size: 20px;
+  }
+  #div__popit_opis p {
+    font-size: 14px;
+  }
+  #div__popit_produkty {
+    padding-top: 20px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  #div__popit_produkty h3 {
+    font-size: 20px;
+  }
+  #div__popit_produkty #produkty_lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #div__popit_produkty #produkty_lista .div__produkt {
+    height: auto;
+  }
+  #div__gra {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+  }
+  #div__gra #gra__opis {
+    width: 90%;
+    margin-top: 0px;
+  }
+  #div__gra #gra__opis h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+  #div__gra #gra__opis p {
+    font-size: 12px;
+    text-align: justify;
+  }
+  #div__gra img {
+    height: auto;
+    width: 80%;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 0 0 30px 0;
+  }
+  /* Footer */
+  footer {
+    font-size: 14px;
+  }
+  footer ul li {
+    margin-right: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
